@@ -50,6 +50,8 @@
 .images {
   width: 250px;
   height: 250px;
+  object-fit: none; /* Do not scale the image */
+  object-position: center;
   padding-left: 30px;
   padding-right: 20px;
   padding-left: 20px;
