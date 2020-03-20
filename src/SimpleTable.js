@@ -53,7 +53,7 @@ export default function SimpleTable() {
       getData();
     }, []);
     const classes = useStyles();
-    if(affectedPlaces.length === 0) return <div>Real Time Covid-19 statistics Loading...</div>;
+    if(affectedPlaces.length === 0) return <div className="loading" style={{padding : 30, fontWeight: 700, color: 'violet', fontSize: 50}}>Real Time Covid-19 statistics Loading... </div>;
     let data = [...affectedPlaces];
   
     console.log(data);
@@ -99,7 +99,7 @@ export default function SimpleTable() {
             aria-controls="panel1a-content"
             id="panel1a-header"
             >
-            <Typography className={classes.heading}>পূর্ণ তথ্য দেখুন (View Full Data)</Typography>
+            <Typography className={classes.heading} style={{display: 'flex', margin: 'auto', fontWeight: 400, color: 'red', fontSize: 20}}>পূর্ণ তথ্য দেখুন (View Full Data)</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
                 <TableContainer component={Paper} >
@@ -130,6 +130,30 @@ export default function SimpleTable() {
                 </TableContainer>
             </ExpansionPanelDetails>
         </ExpansionPanel>
+
+        <p className="symptoms" style={{fontSize: 35, fontWeight: 500}}>উপসর্গ</p>
+        <img 
+          className = "images"
+          style={{width: 500, height: 650}}
+          src={require('../src/images/sym0.png')}/>
+        <img 
+          className = "images"
+          style={{width: 500, height: 650}}
+          src={require('../src/images/sym1.png')}/>
+        <p className="spread" style={{fontSize: 35, fontWeight: 500}}>কিভাবে ছড়ায়</p>
+        <img 
+          className = "images"
+          style={{width: 500, height: 650}}
+          src={require('../src/images/spread3.png')}/>
+        <p className="prevention" style={{fontSize: 35, fontWeight: 500}}>প্রতিরক্ষা</p>
+        <img 
+          className = "images"
+          style={{width: 500, height: 650}}
+          src={require('../src/images/prev0.png')}/>
+        <img 
+          className = "images"
+          style={{width: 500, height: 650}}
+          src={require('../src/images/prev1.jpeg')}/>
         
        </> 
     );
