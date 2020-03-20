@@ -130,25 +130,25 @@ export default function SimpleTable() {
         <p className="symptoms" style={{fontSize: 35, fontWeight: 500}}>উপসর্গ</p>
         <img 
           className = "images"
-          style={{width: 500, height: 650}}
+          style={{width: 300, height: 450}}
           src={require('../src/images/sym0.png')}/>
         <img 
           className = "images"
-          style={{width: 500, height: 650}}
+          style={{width: 300, height: 450}}
           src={require('../src/images/sym1.png')}/>
         <p className="spread" style={{fontSize: 35, fontWeight: 500}}>কিভাবে ছড়ায়</p>
         <img 
           className = "images"
-          style={{width: 500, height: 650}}
+          style={{width: 300, height: 450}}
           src={require('../src/images/spread3.png')}/>
         <p className="prevention" style={{fontSize: 35, fontWeight: 500}}>প্রতিরক্ষা</p>
         <img 
           className = "images"
-          style={{width: 500, height: 650}}
+          style={{width: 300, height: 450}}
           src={require('../src/images/prev0.png')}/>
         <img 
           className = "images"
-          style={{width: 500, height: 650}}
+          style={{width: 300, height: 450}}
           src={require('../src/images/prev1.jpeg')}/>
         
        </> 
