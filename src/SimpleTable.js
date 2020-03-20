@@ -13,8 +13,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import axios from 'axios';
-import Stats from './Stats.js'
-
+import Stats from './Stats.js';
+import Papa from 'papaparse'
 
 const useStyles = makeStyles({
   table: {
@@ -24,71 +24,67 @@ const useStyles = makeStyles({
 
 
 
-const rows = [];
+let rows = [];
 
 let sumOfAffected = 0, sumOfDeaths = 0, sumOfRecovered = 0, bdAffected, bdDeaths, bdRecovered;
 
 export default function SimpleTable() {
-    const [affectedPlaces, setAffectedPlaces] = useState([]);
-    const [message, setMessage] = useState("");
-    const [lastChecked, setLastChecked] = useState("");
+
+    const [covid19Data, setCovid19Data] = useState([]);
+    
+    const classes = useStyles();
+    let arrayOfRows;
+    let data = []; 
 
     useEffect(() => {
-      const getData = async () => {
-     
-        const res = await axios({
-          "method":"GET",
-          "url":"https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats",
-          "headers":{
-          "content-type":"application/octet-stream",
-          "x-rapidapi-host":"covid-19-coronavirus-statistics.p.rapidapi.com",
-          "x-rapidapi-key":"722bd92681mshbaf4f305bdd412ep1bb136jsn6629319fdb37"
-          }
+        const getData = async () => {  
+            Papa.parse('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/03-19-2020.csv', {
+                download: true,
+                complete: function fetch(results) {
+                    //console.log(results);
+                    setCovid19Data(results.data);
+                    //return results;
+                }
+            });
+        }
+        getData();
+      }, []);
+
+    
+    if (covid19Data.length === 0) return <div className="loading" style={{padding : 30, fontWeight: 700, color: 'violet', fontSize: 50}}>Real Time Covid-19 statistics Loading... </div>;
+    arrayOfRows = [...covid19Data];
+
+    for(let i = 1; i < arrayOfRows.length; i++) {
+        data.push({
+            province: arrayOfRows[i][0],
+            country: arrayOfRows[i][1],
+            lastUpdatedAt: arrayOfRows[i][2],
+            confirmed: Number(arrayOfRows[i][3]),
+            deaths: Number(arrayOfRows[i][4]),
+            recovered: Number(arrayOfRows[i][5]),         
         });
-
-        setAffectedPlaces(res.data.data.covid19Stats);
-        setMessage(res.data.message);
-        setLastChecked(res.data.lastChecked);
-      }
-      getData();
-    }, []);
-    const classes = useStyles();
-    if(affectedPlaces.length === 0) return <div className="loading" style={{padding : 30, fontWeight: 700, color: 'violet', fontSize: 50}}>Real Time Covid-19 statistics Loading... </div>;
-    let data = [...affectedPlaces];
-  
-    console.log(data);
-
-    function addDetum(data)  {
-        rows.push(data);
     }
-
-    for(let i = 0; i < data.length; i++) {
+    
+    //console.log(data);
+    for(let i = 0; i < data.length - 1; i++) {
         if(data[i].country === "Bangladesh") {
             bdAffected = data[i].confirmed;
             bdDeaths = data[i].deaths;
             bdRecovered = data[i].recovered;
         }
-        let country;
         if(data[i].province === "") {
-            country = data[i].country;
+            data[i].country = data[i].country;
         } else {
-            country = data[i].country + "(" + data[i].province + ")";
+            data[i].country = data[i].country + "(" + data[i].province + ")";
         }
-        //let province = data[i].province;
-        let lastUpdatedAt = data[i].lastUpdate;
-        let confirmed = data[i].confirmed;
-        sumOfAffected += confirmed;
-        let deaths = data[i].deaths;
-        sumOfDeaths += deaths; 
-        let recovered = data[i].recovered;
-        sumOfRecovered += recovered;
 
-        console.log(sumOfAffected);
-
-        addDetum( {country, lastUpdatedAt, confirmed, deaths, recovered} );
+        sumOfAffected += data[i].confirmed;   
+        sumOfDeaths += data[i].deaths; 
+        sumOfRecovered += data[i].recovered;
 
     }
-    console.log(sumOfAffected);
+    
+    rows = [...data];
 
     return (
        <> 
