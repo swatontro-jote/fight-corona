@@ -1,11 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SimpleTable from './SimpleTable';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      
+        <SimpleTable/>
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +20,7 @@ function App() {
         >
           Learn React
         </a> */}
-        <span className="headd">
+        {/* <span className="headd">
           <img className="moshal" src = "https://i.ya-webdesign.com/images/torch-transparent-gif-animation-18.gif?fbclid=IwAR0UyMjAUa_9RlFb8gGbtWOkzcT-c1FZqcyR0FtAKiYOD7ervuCp3hUl0vo"></img>
           <img className="logoo"
             src="https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/p960x960/53246902_2547024495346950_2987768474471759872_o.jpg?_nc_cat=107&_nc_sid=85a577&_nc_eui2=AeFQ2Yn-HYUCuVp9R1f2fGffkLTblcOV6JC2-2Ne1feEQgIy4pBdkBn2EEESn65iu61PqlGdyynEFbVu6yS5wiqlMAGoCtIYWLOal01z0MDUnQ&_nc_ohc=_uJR3gEyDhgAX-ff4dd&_nc_ht=scontent.fdac5-1.fna&_nc_tp=6&oh=564095c2efe470586cf23ed3f6321beb&oe=5E938517"
@@ -57,8 +59,8 @@ function App() {
           <img 
           className="images"
           src="https://scontent.fdac5-1.fna.fbcdn.net/v/t1.0-9/s960x960/89971238_3282061985176527_6566429057649475584_o.jpg?_nc_cat=106&_nc_sid=02d79f&_nc_eui2=AeFjudFdooWAfJmBJW_tU8EGDbLHWhP2ZB8sjk20wLyTYpuMgjuVKKpHEYajnSoXUIuKcFu5GhEVAwRyUPVt9_WomYovRIRwTkxX0LuZ5TJ2vw&_nc_ohc=rSfUqE-I8MgAX-IKmzA&_nc_ht=scontent.fdac5-1.fna&_nc_tp=7&oh=ff12c12dae3918fff325d7cd14bb7d79&oe=5E95C9BD"></img>
-          </div>
-      </header>
+          </div> */}
+      
     </div>
   );
 }
