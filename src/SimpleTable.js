@@ -91,13 +91,12 @@ export default function SimpleTable() {
 
     return (
        <>
-       <div className="Nav" style={{display: 'flex',  backgroundColor: '#e6b800', width: window, height: 200}}>
-          <img 
-            className = "images"
-            style={{width: 50, height: 50, marginTop: 50}}
-            src={require('../src/images/sjote.png')}/>
-          <span className="text-of-corona" style={{display: 'flex', paddingRight: 50, margin: 'auto', justifyContent: 'center', fontWeight: 900, color: 'black', fontSize: 45}}>করোনা আপডেট বাংলাদেশ</span>
-        </div> 
+       <span className="Nav" style={{display: 'flex',  backgroundColor: '#e6b800', width: window, height: 200, justifyContent: 'center'}}>
+          <a style={{marginRight: 20, marginTop: 10}} href="https://www.facebook.com/SwatontroJote/" target="_blank">
+            <img src={require('../src/images/sjote.jpg')} className="logo" style={{width: 60, height: 60, marginTop: 50}} alt="" />
+          </a>
+          <span className="text-of-corona" style={{fontWeight: 900, color: 'black', fontSize: 45, marginTop: 50}}>করোনা আপডেট বাংলাদেশ</span>
+        </span> 
 
         <Stats affected={sumOfAffected} deaths={sumOfDeaths} recovered={sumOfRecovered} bdAffected={bdAffected} bdDeaths={bdDeaths} bdRecovered={bdRecovered}/>
         <ExpansionPanel>
