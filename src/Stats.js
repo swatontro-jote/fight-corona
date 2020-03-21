@@ -5,6 +5,7 @@ import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import CountUp from 'react-countup';
 
+
 const commafy = require('commafy');
 
 
@@ -23,14 +24,14 @@ class Stats extends React.Component {
         // const bdRecovered = this.props.bdRecovered;
 
 
-        const affected = 284534;
-        const deaths = 11848;
-        const recovered = 93568;
-        const bdAffected = 24;
+        const affected = 286966;
+        const deaths = 11900;
+        const recovered = 93604;
+        const bdAffected = 25;
         const bdDeaths = 2;
         const bdRecovered = 3;
-        const fatality = '4.16%';
-        const bdFatality = '8.33%';
+        const fatality = '4.15%';
+        const bdFatality = '8.00%';
 
         const fontty = 20;
         const fontWei = 500;
