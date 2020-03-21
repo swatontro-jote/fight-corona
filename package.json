@@ -1,6 +1,6 @@
 {
   "name": "fight-corona",
-  "homepage": "https://shotontro-jot.github.io/fight-corona/",
+  "homepage": "https://swatontro-jote.github.io/fight-corona/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +15,7 @@
     "gh-pages": "^2.2.0",
     "papaparse": "^5.1.1",
     "react": "^16.13.0",
+    "react-countup": "^4.3.3",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0"
   },

@@ -15,6 +15,7 @@ import Paper from '@material-ui/core/Paper';
 import axios from 'axios';
 import Stats from './Stats.js';
 import Papa from 'papaparse'
+import CountUp from 'react-countup';
 
 const useStyles = makeStyles({
   table: {
@@ -25,6 +26,7 @@ const useStyles = makeStyles({
 
 
 let rows = [];
+let counter = 0;
 
 let sumOfAffected = 0, sumOfDeaths = 0, sumOfRecovered = 0, bdAffected, bdDeaths, bdRecovered;
 
@@ -56,6 +58,7 @@ export default function SimpleTable() {
 
     for(let i = 1; i < arrayOfRows.length; i++) {
         data.push({
+            serial: i,
             province: arrayOfRows[i][0],
             country: arrayOfRows[i][1],
             lastUpdatedAt: arrayOfRows[i][2],
@@ -94,14 +97,16 @@ export default function SimpleTable() {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
             id="panel1a-header"
+            style={{background: '#e6b800'}}
             >
-            <Typography className={classes.heading} style={{display: 'flex', margin: 'auto', fontWeight: 400, color: 'red', fontSize: 20}}>পূর্ণ তথ্য দেখুন (View Full Data)</Typography>
+            <Typography className={classes.heading} style={{display: 'flex', margin: 'auto', fontWeight: 400, color: 'black', fontSize: 20}}>পূর্ণ উপাত্ত দেখুন (View Full Data)</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
                 <TableContainer component={Paper} >
                     <Table className={classes.table} aria-label="simple table">
                         <TableHead>
                         <TableRow>
+                            <TableCell>No.</TableCell>
                             <TableCell>Country</TableCell>
                             <TableCell align="left">Confirmed Cases</TableCell>
                             <TableCell align="left">Death Cases</TableCell>
@@ -110,8 +115,10 @@ export default function SimpleTable() {
                         </TableRow>
                         </TableHead>
                         <TableBody>
+                            
                         {rows.map(row => (
                             <TableRow key={row.country}>
+                            <TableCell align="left">{row.serial}</TableCell>
                             <TableCell align="left">
                                 {row.country}
                             </TableCell>
@@ -150,7 +157,13 @@ export default function SimpleTable() {
           className = "images"
           style={{width: 300, height: 450}}
           src={require('../src/images/prev1.jpeg')}/>
-        
+        <p className="icder" style={{fontSize: 35, fontWeight: 500}}>জরুরি প্রয়োজনে</p>
+        <img 
+          className = "images"
+          style={{width: 300, height: 450}}
+          src={require('../src/images/ICDER.png')}/>
+
+        <p className="info" style={{fontSize: 25, fontWeight: 500}}>*রিয়েল টাইম ডেটা প্রতিনিয়ত আমেরিকার জন হপকিন্স বিশ্ববিদ্যালয় থেকে সংগ্রহ করে এখানে উপাত্ত অংশে দেখানো হচ্ছে।</p>
        </> 
     );
 }

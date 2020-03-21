@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
+import CountUp from 'react-countup';
+
+const commafy = require('commafy');
+
 
 class Stats extends React.Component {
     constructor(props) {
@@ -19,65 +23,73 @@ class Stats extends React.Component {
         // const bdRecovered = this.props.bdRecovered;
 
 
-        const affected = '2,54,012';
-        const deaths = '10,417';
-        const recovered = '89,101';
-        const bdAffected = '20';
-        const bdDeaths = '1';
-        const bdRecovered = '3';
+        const affected = 254012;
+        const deaths = 10417;
+        const recovered = 89101;
+        const bdAffected = 20;
+        const bdDeaths = 1;
+        const bdRecovered = 3;
         const fatality = '4.10%';
-        const bdFatality = '5%'
+        const bdFatality = '5%';
 
         const fontty = 20;
         const fontWei = 500;
 
         return (
             <div className="stats" style={{padding: 5}}>
-                <p className="world" style={{fontSize: 25, fontWeight: 900}}>বিশ্ব পরিস্থিতি (World Situation)</p>
+                <span className="anim" style={{display: 'flex', justifyContent: 'center'}}>
+                    <img className="animation" style={{width: 30, height : 30, marginTop: 27, marginRight: 10}} src="https://clipartmag.com/images/animated-globe-gif-33.gif"></img>
+                    <p className="world" style={{fontSize: 25, fontWeight: 900}}>বিশ্ব পরিস্থিতি (World Situation)</p>
+                </span>
                 <div className="row-dashboard-world" style={{
                     display:'flex',
                     flexDirection: 'row',
                     justifyContent: 'center',
                     }}>
-                    <div className="infected" style={{paddingRight: 5, paddingLeft: 5}}>
-                        <p className="infected-number" style={{fontSize: fontty, fontWeight: fontWei}}>{affected}</p>
-                        <p className="confirmed-text"style={{fontSize: fontty, color: 'red', fontWeight: fontWei}}>আক্রান্ত (Affected)</p>
+                    <div className="infected" style={{paddingRight: 10}}>
+                        <CountUp style={{fontSize: fontty, fontWeight: fontWei}} duration={2.75} start= {0} end={affected} />
+                        <p className="confirmed-text"style={{fontSize: fontty, color: 'red', fontWeight: fontWei}}>আক্রান্ত<br/>(Affected)</p>
                     </div>
-                    <div className="death" style={{paddingRight: 5, paddingLeft: 5}}>
-                        <p className="death-number" style={{fontSize: fontty, fontWeight: fontWei}}>{deaths}</p>
-                        <p className="death-text"style={{fontSize: fontty, fontWeight: fontWei}}>মৃত (Deaths)</p>
+                    <div className="death" style={{paddingRight: 10}}>
+                        {/* <p className="death-number" style={{fontSize: fontty, fontWeight: fontWei}}>{deaths}</p> */}
+                        <CountUp style={{fontSize: fontty, fontWeight: fontWei}} duration={2.75} start= {0} end={deaths} />
+                        <p className="death-text"style={{fontSize: fontty, fontWeight: fontWei, color: 'black'}}>মৃত<br/>(Deaths)</p>
                     </div>
-                    <div className="recovered" style={{paddingRight: 5, paddingLeft: 5}}>
-                        <p className="recovered-number" style={{fontSize: fontty, fontWeight: fontWei}}>{recovered}</p>
-                        <p className="recovered-text"style={{fontSize: fontty, color: 'green', fontWeight: fontWei}}>সেরে উঠেছেন (Recovered)</p>
+                    <div className="recovered" style={{paddingRight: 10}}>
+                        <CountUp style={{fontSize: fontty, fontWeight: fontWei, marginTop: 50}} duration={2.75} start= {0} end={recovered} />
+                        <p className="recovered-text"style={{fontSize: fontty, color: 'green', fontWeight: fontWei}}>সেরে উঠেছেন<br/>(Recovered)</p>
                     </div>
-                    <div className="fatality" style={{paddingRight: 5, paddingLeft: 5}}>
-                        <p className="fatality-number" style={{fontSize: fontty, fontWeight: fontWei}}>{fatality}</p>
-                        <p className="fatality-text"style={{fontSize: fontty, color: 'green', fontWeight: fontWei}}>মৃত্যুহার (Fatality Rate)</p>
+                    <div className="fatality" style={{paddingRight: 1}}>
+                        <span className="fatality-number" style={{fontSize: fontty, fontWeight: fontWei, paddingTop: 0}}>{fatality}</span>
+                        <p className="fatality-text"style={{fontSize: fontty, color: 'red', fontWeight: fontWei, marginBottom: 10}}>মৃত্যুহার<br/>(Fatality Rate)</p>
                     </div>
                 </div>
-                <p className="bd" style={{fontSize: 25, fontWeight: 900}}>বাংলাদেশ পরিস্থিতি (Bangladesh Situation)</p>
+                <span className="anim-bd" style={{display: 'flex', justifyContent: 'center'}}>
+                    <img className="animation" style={{width: 30, height : 30, marginTop: 27, marginRight: 10}} src="https://bestanimations.com/Flags/Asia/bangladesh/bangladesh-flag-waving-gif-animation-4.gif"></img>
+                    <p className="bd" style={{fontSize: 25, fontWeight: 900}}>বাংলাদেশ পরিস্থিতি (Bangladesh Situation)</p>
+                </span>
                 <div className="row-dashboard-world" style={{
                     display:'flex',
                     flexDirection: 'row',
                     justifyContent: 'center',
-                    margin: 20
+                    margin: 5
                     }}>
-                    <div className="infected" style={{paddingRight: 5, paddingLeft: 5}}>
-                        <p className="infected-number" style={{fontSize: fontty, fontWeight: fontWei}}>{bdAffected}</p>
-                        <p className="confirmed-text"style={{fontSize: fontty, color: 'red', fontWeight: fontWei}}>আক্রান্ত (Affected)</p>
+                    <div className="infected" style={{paddingRight: 10}}>
+                        <CountUp style={{fontSize: fontty, fontWeight: fontWei}} duration={2.75} start= {0} end={bdAffected} />
+                        <p className="confirmed-text"style={{fontSize: fontty, color: 'red', fontWeight: fontWei}}>আক্রান্ত<br/>(Affected)</p>
                     </div>
-                    <div className="death" style={{paddingRight: 5, paddingLeft: 5}}>
-                        <p className="death-number" style={{fontSize: fontty, fontWeight: fontWei}}>{bdDeaths}</p>
-                        <p className="death-text"style={{fontSize: fontty, fontWeight: fontWei}}>মৃত (Deaths)</p>
+                    <div className="death" style={{paddingRight: 10}}>
+                        <CountUp style={{fontSize: fontty, fontWeight: fontWei}} duration={2.75} start= {0} end={bdDeaths} />
+                        <p className="death-text"style={{fontSize: fontty, fontWeight: fontWei}}>মৃত<br/>(Deaths)</p>
                     </div>
-                    <div className="recovered" style={{paddingRight: 5, paddingLeft: 5}}>
-                        <p className="recovered-number" style={{fontSize: fontty, fontWeight: fontWei}}>{bdRecovered}</p>
-                        <p className="recovered-text"style={{fontSize: fontty, color: 'green', fontWeight: fontWei}}>সেরে উঠেছেন (Recovered)</p>
+                    <div className="recovered" style={{paddingRight: 10}}>
+                        <CountUp style={{fontSize: fontty, fontWeight: fontWei}} duration={2.75} start= {0} end={bdRecovered} />
+                        <p className="recovered-text"style={{fontSize: fontty, color: 'green', fontWeight: fontWei}}>সেরে উঠেছেন<br/>(Recovered)</p>
                     </div>
-                    <div className="fatality" style={{paddingRight: 5, paddingLeft: 2}}>
-                        <p className="fatality-number" style={{fontSize: fontty, fontWeight: fontWei}}>{bdFatality}</p>
-                        <p className="fatality-text"style={{fontSize: fontty, color: 'green', fontWeight: fontWei}}>মৃত্যুহার (Fatality Rate)</p>
+                    <div className="fatality" style={{paddingLeft: 1}}>
+                        {/* <p className="death-number" style={{fontSize: fontty, fontWeight: fontWei}}>{bdFatality}</p> */}
+                        <span className="fatality-number" style={{fontSize: fontty, fontWeight: fontWei, paddingTop: 0}}>{bdFatality}</span>
+                        <p className="fatality-text"style={{fontSize: fontty, color: 'red', fontWeight: fontWei}}>মৃত্যুহার<br/>(Fatality Rate)</p>
                     </div>
                 </div>
             </div>    
