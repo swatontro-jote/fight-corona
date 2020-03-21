@@ -30,7 +30,7 @@ class Stats extends React.Component {
         const bdDeaths = 2;
         const bdRecovered = 3;
         const fatality = '4.13%';
-        const bdFatality = '5%';
+        const bdFatality = '8.33%';
 
         const fontty = 20;
         const fontWei = 500;
