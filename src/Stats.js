@@ -26,8 +26,8 @@ class Stats extends React.Component {
         const affected = 276640;
         const deaths = 11429;
         const recovered = 91953;
-        const bdAffected = 20;
-        const bdDeaths = 1;
+        const bdAffected = 24;
+        const bdDeaths = 2;
         const bdRecovered = 3;
         const fatality = '4.13%';
         const bdFatality = '5%';

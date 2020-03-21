@@ -97,10 +97,6 @@ export default function SimpleTable() {
             style={{width: 50, height: 50, marginTop: 50}}
             src={require('../src/images/sjote.png')}/>
           <span className="text-of-corona" style={{display: 'flex', paddingRight: 50, margin: 'auto', justifyContent: 'center', fontWeight: 900, color: 'black', fontSize: 45}}>করোনা আপডেট বাংলাদেশ</span>
-          <img 
-            className = "images"
-            style={{width: 50, height: 50, marginTop: 50}}
-            src={require('../src/images/sjote.png')}/>
         </div> 
 
         <Stats affected={sumOfAffected} deaths={sumOfDeaths} recovered={sumOfRecovered} bdAffected={bdAffected} bdDeaths={bdDeaths} bdRecovered={bdRecovered}/>
