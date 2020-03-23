@@ -27,11 +27,11 @@ class Stats extends React.Component {
         const affected = 341337;
         const deaths = 14748;
         const recovered = 99019;
-        const bdAffected = 27;
-        const bdDeaths = 2;
+        const bdAffected = 33;
+        const bdDeaths = 3;
         const bdRecovered = 5;
         const fatality = '4.32%';
-        const bdFatality = '7.4%';
+        const bdFatality = '9.1%';
 
         const fontty = 20;
         const fontWei = 500;
