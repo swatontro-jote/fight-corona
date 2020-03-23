@@ -40,7 +40,7 @@ export default function SimpleTable() {
 
     useEffect(() => {
         const getData = async () => {  
-            Papa.parse('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/03-20-2020.csv', {
+            Papa.parse('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/03-22-2020.csv', {
                 download: true,
                 complete: function fetch(results) {
                     //console.log(results);
