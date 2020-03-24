@@ -91,11 +91,11 @@ export default function SimpleTable() {
 
     return (
        <>
-       <span className="Nav" style={{display: 'flex',  backgroundColor: '#e6b800', width: window, height: 200, justifyContent: 'center'}}>
+       <span className="Nav" style={{display: 'flex',  backgroundColor: '#e6b800', width: window, height: 220, justifyContent: 'center'}}>
           <a style={{marginRight: 20, marginTop: 10}} href="https://www.facebook.com/SwatontroJote/" target="_blank">
-            <img src={require('../src/images/sjote.jpg')} className="logo" style={{width: 60, height: 60, marginTop: 50}} alt="" />
+            <img src={require('../src/images/sjote.jpg')} className="logo" style={{width: 60, height: 60, marginTop: 40}} alt="" />
           </a>
-          <span className="text-of-corona" style={{fontWeight: 900, color: 'black', fontSize: 45, marginTop: 50}}>করোনা আপডেট বাংলাদেশ</span>
+          <span className="text-of-corona" style={{fontWeight: 900, color: 'black', fontSize: 40, marginTop: 50}}>করোনা আপডেট বাংলাদেশ</span>
         </span> 
 
         <Stats affected={sumOfAffected} deaths={sumOfDeaths} recovered={sumOfRecovered} bdAffected={bdAffected} bdDeaths={bdDeaths} bdRecovered={bdRecovered}/>
