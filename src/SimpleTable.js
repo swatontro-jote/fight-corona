@@ -164,6 +164,11 @@ export default function SimpleTable() {
           className = "images"
           style={{width: 300, height: 450}}
           src={require('../src/images/prev1.jpeg')}/>
+        <p className="sanitization" style={{fontSize: 35, fontWeight: 500}}>পাশে আসুন, ডাক্তার নার্সদের!</p>
+        <img 
+          className = "images"
+          style={{width: 500, height: 450}}
+          src={require('../src/images/ration.jpg')}/>
         <p className="icder" style={{fontSize: 35, fontWeight: 500}}>জরুরি প্রয়োজনে</p>
         <img 
           className = "images"

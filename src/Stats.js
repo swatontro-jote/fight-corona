@@ -24,14 +24,15 @@ class Stats extends React.Component {
         // const bdRecovered = this.props.bdRecovered;
 
 
-        const affected = 341337;
-        const deaths = 14748;
-        const recovered = 99019;
+        const affected = 378981;
+        const deaths = 16525;
+        const recovered = 102492;
         const bdAffected = 33;
         const bdDeaths = 3;
         const bdRecovered = 5;
-        const fatality = '4.32%';
+        const fatality = '4.36%';
         const bdFatality = '9.1%';
+        const bdIsolation = 51;
 
         const fontty = 20;
         const fontWei = 500;
@@ -69,7 +70,7 @@ class Stats extends React.Component {
                     <img className="animation" style={{width: 30, height : 30, marginTop: 27, marginRight: 10}} src="https://bestanimations.com/Flags/Asia/bangladesh/bangladesh-flag-waving-gif-animation-4.gif"></img>
                     <p className="bd" style={{fontSize: 25, fontWeight: 900}}>বাংলাদেশ পরিস্থিতি (Bangladesh Situation)</p>
                 </span>
-                <div className="row-dashboard-world" style={{
+                <div className="row-dashboard-bd" style={{
                     display:'flex',
                     flexDirection: 'row',
                     justifyContent: 'center',
@@ -91,6 +92,13 @@ class Stats extends React.Component {
                         {/* <p className="death-number" style={{fontSize: fontty, fontWeight: fontWei}}>{bdFatality}</p> */}
                         <span className="fatality-number" style={{fontSize: fontty, fontWeight: fontWei, paddingTop: 0}}>{bdFatality}</span>
                         <p className="fatality-text"style={{fontSize: fontty, color: 'red', fontWeight: fontWei}}>মৃত্যুহার<br/>(Fatality Rate)</p>
+                    </div>
+                </div>
+                <div className="bd-stats">
+                    <div className="fatality" style={{paddingLeft: 1}}>
+                        {/* <p className="death-number" style={{fontSize: fontty, fontWeight: fontWei}}>{bdFatality}</p> */}
+                        <span className="fatality-number" style={{fontSize: fontty, fontWeight: fontWei, paddingTop: 0}}>{bdIsolation}</span>
+                        <p className="fatality-text"style={{fontSize: fontty, color: 'red', fontWeight: fontWei}}>আইসোলেশন<br/>(Isolation)</p>
                     </div>
                 </div>
             </div>    
