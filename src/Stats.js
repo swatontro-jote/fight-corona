@@ -128,7 +128,6 @@ class Stats extends React.Component {
         <br />
         <br />
         <br />
-
         <span
           className="anim-bd"
           style={{ display: "flex", justifyContent: "center" }}
@@ -231,7 +230,8 @@ class Stats extends React.Component {
         <br />
         <br />
         <br />
-        <Map />
+
+        {/* <Map /> */}
       </div>
     );
   }
