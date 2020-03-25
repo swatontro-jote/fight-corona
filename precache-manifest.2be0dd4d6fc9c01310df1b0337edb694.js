@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "faf6449c362cd73d1ee1ca7318179a55",
+    "revision": "abf23c1adc2be349f46f414c5a080099",
     "url": "/fight-corona/index.html"
   },
   {
-    "revision": "009e3dbccf5c73c3bf19",
-    "url": "/fight-corona/static/css/main.c30fe6e8.chunk.css"
+    "revision": "74634548dc891d85b0b9",
+    "url": "/fight-corona/static/css/main.dd0cc410.chunk.css"
   },
   {
     "revision": "fed16b8db1cecf53c55a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fight-corona/static/js/2.1dd6c0d7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "009e3dbccf5c73c3bf19",
-    "url": "/fight-corona/static/js/main.c274d409.chunk.js"
+    "revision": "74634548dc891d85b0b9",
+    "url": "/fight-corona/static/js/main.7f358c5f.chunk.js"
   },
   {
     "revision": "3b29fe11dacbd78a7b50",
