@@ -211,8 +211,7 @@ class Stats extends React.Component {
               মৃত্যুহার (Fatality&nbsp;Rate)
             </p>
           </div>
-        </div>
-        <div className="bd-stats">
+
           <div className="fatality" style={{ paddingLeft: 1 }}>
             {/* <p className="death-number" style={{fontSize: fontty, fontWeight: fontWei}}>{bdFatality}</p> */}
             <span
