@@ -1,7 +1,6 @@
 .App {
   text-align: center;
-  background-color: #ffe680
-  ;
+  background-color: #ffe680;
 }
 
 .App-logo {
@@ -23,7 +22,7 @@
   /* align-items: top;
   justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color:  #ffe680;
+  color: #ffe680;
 }
 
 .headd {
@@ -39,16 +38,15 @@
 }
 
 .event {
-  color: white
+  color: white;
 }
-
 
 .App-link {
   color: #61dafb;
 }
 
 .likha {
-  color: yellow
+  color: yellow;
 }
 
 .stand {
@@ -57,15 +55,48 @@
 
 .images {
   width: 300px;
-  height: 350px;
   padding-left: 30px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 50px;
+  object-fit: fill;
+  object-position: center;
+}
+
+.images-435 {
+  width: 435px;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  object-fit: fill;
+  object-position: center;
+}
+
+.images-700 {
+  width: 700px;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  object-fit: fill;
+  object-position: center;
+}
+
+@media only screen and (max-width: 890px) {
+  .images,
+  .images-435,
+  .images-700 {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    object-fit: fill;
+    object-position: center;
+  }
 }
 
 .moshal {
-  width : 75px;
+  width: 75px;
   height: 150px;
   padding-top: 20px;
 }
@@ -77,4 +108,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.text-of-corona {
+  font-weight: 700;
+  font-size: 2rem;
+  color: black;
+}
+@media only screen and (max-width: 890px) {
+  .text-of-corona {
+    font-size: 1.5rem;
+    color: black;
+  }
+}
+
+.division {
+  fill: rgb(0, 131, 70);
+  transition: all 0.5s ease;
+}
+
+.division:hover {
+  fill: rgb(5, 71, 40);
 }
