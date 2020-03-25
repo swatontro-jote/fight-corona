@@ -102,7 +102,7 @@ class Stats extends React.Component {
               className="recovered-text"
               style={{ fontSize: fontty, color: "green", fontWeight: fontWei }}
             >
-              সেরে উঠেছেন (Recovered)
+              সেরে&nbsp;উঠেছেন (Recovered)
             </p>
           </div>
           <div className="fatality" style={{ paddingRight: 1 }}>
@@ -121,10 +121,14 @@ class Stats extends React.Component {
                 marginBottom: 10
               }}
             >
-              মৃত্যুহার (Fatality Rate)
+              মৃত্যুহার (Fatality&nbsp;Rate)
             </p>
           </div>
         </div>
+        <br />
+        <br />
+        <br />
+
         <span
           className="anim-bd"
           style={{ display: "flex", justifyContent: "center" }}
@@ -189,7 +193,7 @@ class Stats extends React.Component {
               className="recovered-text"
               style={{ fontSize: fontty, color: "green", fontWeight: fontWei }}
             >
-              সেরে উঠেছেন (Recovered)
+              সেরে&nbsp;উঠেছেন (Recovered)
             </p>
           </div>
           <div className="fatality" style={{ paddingLeft: 1 }}>
@@ -204,7 +208,7 @@ class Stats extends React.Component {
               className="fatality-text"
               style={{ fontSize: fontty, color: "red", fontWeight: fontWei }}
             >
-              মৃত্যুহার (Fatality Rate)
+              মৃত্যুহার (Fatality&nbsp;Rate)
             </p>
           </div>
         </div>
@@ -225,6 +229,9 @@ class Stats extends React.Component {
             </p>
           </div>
         </div>
+        <br />
+        <br />
+        <br />
         <Map />
       </div>
     );

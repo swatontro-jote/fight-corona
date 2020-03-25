@@ -15,10 +15,10 @@ function Map(props) {
     <div className="map-divisions">
       <svg
         enable-background="new -106.403 -201.859 629.266 880.536"
-        height="30rem"
+        height="25rem"
         id="district_41"
         viewBox="-106.403 -201.859 629.266 880.536"
-        width="26rem"
+        width="21rem"
         x="0px"
         xmlSpace="preserve"
         xmlns="http://www.w3.org/2000/svg"

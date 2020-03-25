@@ -16,6 +16,7 @@ const HtmlTooltip = withStyles(theme => ({
 function Dhaka(props) {
   return (
     <HtmlTooltip
+      disableFocusListener
       title={
         <React.Fragment>
           <h2>ঢাকা</h2>
