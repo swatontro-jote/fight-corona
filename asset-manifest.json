@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/fight-corona/static/css/main.dd0cc410.chunk.css",
-    "main.js": "/fight-corona/static/js/main.74b47a76.chunk.js",
-    "main.js.map": "/fight-corona/static/js/main.74b47a76.chunk.js.map",
-    "runtime-main.js": "/fight-corona/static/js/runtime-main.29e4805c.js",
-    "runtime-main.js.map": "/fight-corona/static/js/runtime-main.29e4805c.js.map",
-    "static/js/2.1dd6c0d7.chunk.js": "/fight-corona/static/js/2.1dd6c0d7.chunk.js",
-    "static/js/2.1dd6c0d7.chunk.js.map": "/fight-corona/static/js/2.1dd6c0d7.chunk.js.map",
+    "main.css": "/fight-corona/static/css/main.f9ef9835.chunk.css",
+    "main.js": "/fight-corona/static/js/main.d585b1c2.chunk.js",
+    "main.js.map": "/fight-corona/static/js/main.d585b1c2.chunk.js.map",
+    "runtime-main.js": "/fight-corona/static/js/runtime-main.aa3d5221.js",
+    "runtime-main.js.map": "/fight-corona/static/js/runtime-main.aa3d5221.js.map",
+    "static/js/2.215bcae4.chunk.js": "/fight-corona/static/js/2.215bcae4.chunk.js",
+    "static/js/2.215bcae4.chunk.js.map": "/fight-corona/static/js/2.215bcae4.chunk.js.map",
     "index.html": "/fight-corona/index.html",
-    "precache-manifest.10dd03eea635f5d5987e8cc88277b2a6.js": "/fight-corona/precache-manifest.10dd03eea635f5d5987e8cc88277b2a6.js",
+    "precache-manifest.deea885781c44a82a3c8fb0a1fda13a9.js": "/fight-corona/precache-manifest.deea885781c44a82a3c8fb0a1fda13a9.js",
     "service-worker.js": "/fight-corona/service-worker.js",
-    "static/css/main.dd0cc410.chunk.css.map": "/fight-corona/static/css/main.dd0cc410.chunk.css.map",
-    "static/js/2.1dd6c0d7.chunk.js.LICENSE.txt": "/fight-corona/static/js/2.1dd6c0d7.chunk.js.LICENSE.txt",
+    "static/css/main.f9ef9835.chunk.css.map": "/fight-corona/static/css/main.f9ef9835.chunk.css.map",
+    "static/js/2.215bcae4.chunk.js.LICENSE.txt": "/fight-corona/static/js/2.215bcae4.chunk.js.LICENSE.txt",
     "static/media/ICDER.png": "/fight-corona/static/media/ICDER.233d17d6.png",
-    "static/media/logo.svg": "/fight-corona/static/media/logo.ee7cd8ed.svg",
+    "static/media/logo.svg": "/fight-corona/static/media/logo.5d5d9eef.svg",
     "static/media/prev0.png": "/fight-corona/static/media/prev0.cd615cb5.png",
     "static/media/prev1.jpeg": "/fight-corona/static/media/prev1.8a98d04b.jpeg",
     "static/media/ration.jpg": "/fight-corona/static/media/ration.79ac20a7.jpg",
@@ -23,9 +23,9 @@
     "static/media/sym1.png": "/fight-corona/static/media/sym1.50a0b858.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.29e4805c.js",
-    "static/js/2.1dd6c0d7.chunk.js",
-    "static/css/main.dd0cc410.chunk.css",
-    "static/js/main.74b47a76.chunk.js"
+    "static/js/runtime-main.aa3d5221.js",
+    "static/js/2.215bcae4.chunk.js",
+    "static/css/main.f9ef9835.chunk.css",
+    "static/js/main.d585b1c2.chunk.js"
   ]
 }

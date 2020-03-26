@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7321e0629ac21e098f3299afbd657ca",
+    "revision": "eea8ab0c936a5c97a3cb455dc0b7a1c4",
     "url": "/fight-corona/index.html"
   },
   {
-    "revision": "b82471477eec04aedf78",
-    "url": "/fight-corona/static/css/main.dd0cc410.chunk.css"
+    "revision": "5b9c8fe7e9d956337b77",
+    "url": "/fight-corona/static/css/main.f9ef9835.chunk.css"
   },
   {
-    "revision": "fed16b8db1cecf53c55a",
-    "url": "/fight-corona/static/js/2.1dd6c0d7.chunk.js"
+    "revision": "f96e1f470bc73cd695b4",
+    "url": "/fight-corona/static/js/2.215bcae4.chunk.js"
   },
   {
-    "revision": "e9dca45c5fa03beb226bc9afa19b873e",
-    "url": "/fight-corona/static/js/2.1dd6c0d7.chunk.js.LICENSE.txt"
+    "revision": "dc33d607f9d94ea9083494caedc2dae7",
+    "url": "/fight-corona/static/js/2.215bcae4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b82471477eec04aedf78",
-    "url": "/fight-corona/static/js/main.74b47a76.chunk.js"
+    "revision": "5b9c8fe7e9d956337b77",
+    "url": "/fight-corona/static/js/main.d585b1c2.chunk.js"
   },
   {
-    "revision": "3b29fe11dacbd78a7b50",
-    "url": "/fight-corona/static/js/runtime-main.29e4805c.js"
+    "revision": "5012aa97cdaedbc641cf",
+    "url": "/fight-corona/static/js/runtime-main.aa3d5221.js"
   },
   {
     "revision": "233d17d60ac43485ce6d69a2ba8b4e08",
     "url": "/fight-corona/static/media/ICDER.233d17d6.png"
   },
   {
-    "revision": "ee7cd8ed2dcec943251eb2763684fc6f",
-    "url": "/fight-corona/static/media/logo.ee7cd8ed.svg"
+    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
+    "url": "/fight-corona/static/media/logo.5d5d9eef.svg"
   },
   {
     "revision": "cd615cb55acf1176e59405f8f6bfc3dd",
