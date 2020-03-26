@@ -26,14 +26,14 @@ function Map(props) {
         centerX="190"
         centerY="80"
       >
-        <Dhaka affected={"৩০"} dead={"৭"} recovered={"৪৫"} />
-        <Chittagong affected={"৩০"} dead={"৭"} recovered={"৪৫"} />
-        <Sylhet affected={"৩০"} dead={"৭"} recovered={"৪৫"} />
-        <Rajshahi affected={"৩০"} dead={"৭"} recovered={"৪৫"} />
-        <Rangpur affected={"৩০"} dead={"৭"} recovered={"৪৫"} />
-        <Khulna affected={"৩০"} dead={"৭"} recovered={"৪৫"} />
-        <Mymensingh affected={"৩০"} dead={"৭"} recovered={"৪৫"} />
-        <Barisal affected={"৩০"} dead={"৭"} recovered={"৪৫"} />
+        <Dhaka affected={"২৯"} dead={"৭"} recovered={"৪৫"} />
+        <Chittagong affected={"১"} dead={"৭"} recovered={"৪৫"} />
+        <Sylhet affected={"০"} dead={"৭"} recovered={"৪৫"} />
+        <Rajshahi affected={"০"} dead={"৭"} recovered={"৪৫"} />
+        <Rangpur affected={"২"} dead={"৭"} recovered={"৪৫"} />
+        <Khulna affected={"১"} dead={"৭"} recovered={"৪৫"} />
+        <Mymensingh affected={"০"} dead={"৭"} recovered={"৪৫"} />
+        <Barisal affected={"০"} dead={"৭"} recovered={"৪৫"} />
       </svg>
     </div>
   );
