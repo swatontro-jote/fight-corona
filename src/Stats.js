@@ -22,14 +22,14 @@ class Stats extends React.Component {
     // const bdDeaths = this.props.bdDeaths;
     // const bdRecovered = this.props.bdRecovered;
 
-    const affected = 1532894;
-    const deaths = 89723;
-    const recovered = 337444;
-    const bdAffected = 330;
-    const bdDeaths = 21;
-    const bdRecovered = 33;
-    const fatality = "5.85%";
-    const bdFatality = "6.36%";
+    const affected = 2016486;
+    const deaths = 127839;
+    const recovered = 491973;
+    const bdAffected = 1231;
+    const bdDeaths = 50;
+    const bdRecovered = 49;
+    const fatality = "6.34%";
+    const bdFatality = "8.70%%";
     const bdIsolation = 473;
 
     const fontty = 20;
