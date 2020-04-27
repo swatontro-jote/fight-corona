@@ -22,15 +22,15 @@ class Stats extends React.Component {
     // const bdDeaths = this.props.bdDeaths;
     // const bdRecovered = this.props.bdRecovered;
 
-    const affected = 2016486;
-    const deaths = 127839;
-    const recovered = 491973;
-    const bdAffected = 1231;
-    const bdDeaths = 50;
-    const bdRecovered = 49;
-    const fatality = "6.34%";
-    const bdFatality = "8.70%%";
-    const bdIsolation = 473;
+    const affected = 2974346;
+    const deaths = 207827;
+    const recovered = 888919;
+    const bdAffected = 5913;
+    const bdDeaths = 152;
+    const bdRecovered = 131;
+    const fatality = "6.99%";
+    const bdFatality = "2.57%";
+    const bdIsolation = 46716;
 
     const fontty = 20;
     const fontWei = 500;
@@ -223,7 +223,7 @@ class Stats extends React.Component {
               className="fatality-text"
               style={{ fontSize: fontty, color: "red", fontWeight: fontWei }}
             >
-              আইসোলেশন (Isolation)
+              মোট পরিক্ষা (Total Test)
             </p>
           </div>
         </div>
