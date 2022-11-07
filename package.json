@@ -10,7 +10,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
-    "commafy": "0.0.5",
+    "commafy": "0.0.6",
     "convert-csv-to-array": "^1.0.3",
     "countup.js": "^2.0.4",
     "gh-pages": "^2.2.0",
